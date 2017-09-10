@@ -1,4 +1,10 @@
-function getSum(sum) {
-    return sum.a + sum.b;
-}
-console.log(getSum({ a: 1, b: 2 }));
+"use strict";
+exports.__esModule = true;
+var like_1 = require("./like");
+var likeComponent = new like_1.LikeComponent(0, false);
+likeComponent.onClick();
+console.log(likeComponent.isSelected);
+console.log(likeComponent.likesCont);
+likeComponent.onClick();
+console.log(likeComponent.isSelected);
+console.log(likeComponent.likesCont);
